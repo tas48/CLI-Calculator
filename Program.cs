@@ -17,7 +17,7 @@
       
         if (operation.Equals(":q"))
       {
-        return;
+        Environment.Exit(0);
       }
       else if(operation.Equals(":c"))
       {
@@ -36,7 +36,7 @@
         string? comeBack = Console.ReadLine();
         if (comeBack.Equals(":cb"))
         {
-          Console.Clear();
+          Console.Clear(); 
           Loader();
         }        
 
